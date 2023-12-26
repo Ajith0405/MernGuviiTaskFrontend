@@ -84,7 +84,7 @@ const Login = () => {
                             }
                             {
                                 loading ?(
-                                    <div class="spinner-border w-100 mx-auto" role="status">
+                                    <div class="spinner-border mx-auto" role="status">
                                         <span class="sr-only">Loading...</span>
                                     </div>
                                 ):null
