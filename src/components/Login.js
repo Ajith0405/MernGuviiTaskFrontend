@@ -84,9 +84,12 @@ const Login = () => {
                             }
                             {
                                 loading ?(
-                                    <div class="spinner-border mx-auto" role="status">
-                                        <span class="sr-only">Loading...</span>
+                                    <div className='text-center'>
+                                        <div className="spinner-border" role="status">
+                                        <span className="sr-only">Loading...</span>
+                                        </div>
                                     </div>
+                                    
                                 ):null
                             }
                             <div className="text-center">
