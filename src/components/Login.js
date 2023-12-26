@@ -24,6 +24,7 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setError("");
         setloading(true);
         axios.post(`${BASE_URL}/login`, { email, password })
             .then(result => {
