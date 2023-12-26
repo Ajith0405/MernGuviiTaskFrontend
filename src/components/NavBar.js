@@ -25,14 +25,14 @@ const NavBar = () => {
                         <ul className="navbar-nav text-center">
                             {
                                 !isAunthenticate() ? (
-                                    <li className="nav-item me-2">
+                                    <li className="nav-item me-2 mb-1">
                                         <Link className='btn btn-dark' to='/'>Register</Link>
                                     </li>
                                 ) : null
                             }
                             {
                                 !isAunthenticate() ? (
-                                    <li className="nav-item me-2">
+                                    <li className="nav-item me-2 mb-1">
                                         <Link className='btn btn-dark' to='/login'>Login</Link>
                                     </li>
                                 ) : null
