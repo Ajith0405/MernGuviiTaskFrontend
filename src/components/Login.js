@@ -36,6 +36,7 @@ const Login = () => {
                     navigate(`/profile/${result.data._id}`)
                 } else {
                     setError(result.data);
+                    setloading(false);
                 }
 
             })
