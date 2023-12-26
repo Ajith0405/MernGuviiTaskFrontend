@@ -74,7 +74,7 @@ const Profile = () => {
   return (
     <div>
       <NavBar/>
-      <div className=' mt-3 container'>
+      <div className=' mt-3 container mb-2'>
         <div className='row '>
           <div className='col-12 col-lg-5 col-md-5 bg-dark px-3' style={{ backgroundColor: 'gray', height: '85vh',margin:'0px 0px',borderRadius:'20px 20px 20px 20px'}}>
             <div className='text-center'>
