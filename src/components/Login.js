@@ -14,6 +14,8 @@ const Login = () => {
     const [error, setError] = useState("");
     const [passShowHide, setpassShowHide] = useState(true);
 
+    const [loading, setloading] = useState(false);
+
 
 
     const handlePassHideShow = () => {
@@ -22,6 +24,7 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setloading(true);
         axios.post(`${BASE_URL}/login`, { email, password })
             .then(result => {
                 console.log(result)
@@ -29,6 +32,7 @@ const Login = () => {
 
                     storeUserData(result.data._id)
                     //    navigate('/profile')
+                    setloading(false);
                     navigate(`/profile/${result.data._id}`)
                 } else {
                     setError(result.data);
@@ -77,6 +81,13 @@ const Login = () => {
                                         <span className='text-danger' style={{ fontWeight: '600' }}>{error}</span>
                                     </div>
                                 ) : null
+                            }
+                            {
+                                loading ?(
+                                    <div class="spinner-border text-center" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                ):null
                             }
                             <div className="text-center">
                                 <button type="submit" className="btn btn-primary text-center w-75">Login</button>
