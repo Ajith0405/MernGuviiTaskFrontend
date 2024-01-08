@@ -16,7 +16,7 @@ const NavBar = () => {
             <nav className="navbar navbar-expand-sm bg-light navbar-light">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
-                        <img src='https://www.mangoitsolutions.com/wp-content/uploads/2022/01/becomeamernstackdeveloper-mobile-300x279.png' alt='logo' width={'100px'}/>
+                        <img src='https://www.mangoitsolutions.com/wp-content/uploads/2022/01/becomeamernstackdeveloper-mobile-300x279.png' alt='logo' width={'50px'}/>
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                         <span className="navbar-toggler-icon"></span>
